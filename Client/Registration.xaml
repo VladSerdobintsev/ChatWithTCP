@@ -1,0 +1,65 @@
+﻿<Window x:Class="Client.Registration" x:Name="windowRegistration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Height="380" Width="400" MinHeight="380" MinWidth="400" MaxHeight="400" MaxWidth="420" WindowStartupLocation="CenterOwner" ShowInTaskbar="False" Title="Регистрация" Closing="Window_Closing">
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style x:Key="textLabel" TargetType="Label">
+                <Setter Property="VerticalAlignment" Value="Center"/>
+            </Style>
+            <ControlTemplate x:Key="DatePickerTemplate" TargetType="DatePicker">
+                <Border x:Name="border" CornerRadius="15" BorderThickness="2" Padding="5" Margin="5">
+                    <Border.BorderBrush>
+                        <SolidColorBrush>
+                            <SolidColorBrush.Color>
+                                <Color R="227" G="233" B="239" A="255"/>
+                            </SolidColorBrush.Color>
+                        </SolidColorBrush>
+                    </Border.BorderBrush>
+                    <DatePicker BorderThickness="0"/>
+                </Border>
+            </ControlTemplate>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid x:Name="mainGrid" Margin="5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*" />
+            <ColumnDefinition Width="71*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Label Content="Введите имя:" Style="{StaticResource textLabel}"/>
+        <Label Grid.Row="1" Content="Введите фамилию:" Style="{StaticResource textLabel}"/>
+        <Label Grid.Row="2" Content="Введите дату рождения:" Style="{StaticResource textLabel}"/>
+        <RadioButton x:Name="manRadioButton" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Мужчина"/>
+        <RadioButton x:Name="womanRadioButton" Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Женщина"/>
+        <Label Grid.Row="4" Content="Введите e-mail:" Style="{StaticResource textLabel}"/>
+        <TextBox x:Name="NameTextBox" Grid.Column="1" Template="{StaticResource TextBoxTemplate}" Padding="5" Margin="5" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="SurnameTextBox" Grid.Column="1" Grid.Row="1" Template="{StaticResource TextBoxTemplate}" Padding="5" Margin="5" VerticalContentAlignment="Center"/>
+        <DatePicker x:Name="dateDatePicker" Grid.Column="1" Grid.Row="2" Template="{StaticResource DatePickerTemplate}" VerticalAlignment="Center"/>
+        <Grid Grid.Column="1" Grid.Row="4" x:Name="miniGrid">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="emailTextBox" Grid.ColumnSpan="4" Template="{StaticResource TextBoxTemplate}" Padding="5" Margin="5" VerticalContentAlignment="Center" PreviewTextInput="TextBox_PreviewTextInput"/>
+        </Grid>
+            <Label Grid.Row="5" Content="Введите пароль:" Style="{StaticResource textLabel}"/>
+         <PasswordBox x:Name="passwordPasswordBox" Grid.Column="1" Grid.Row="5" Template="{StaticResource TextBoxTemplate}" Padding="5" Margin="5" VerticalContentAlignment="Center"/>
+            <Label Grid.Row="6" Content="Повторите пароль:" Style="{StaticResource textLabel}"/>
+            <PasswordBox x:Name="repeatPasswordPasswordBox" Grid.Column="1" Grid.Row="6" Template="{StaticResource TextBoxTemplate}" Padding="5" Margin="5" VerticalContentAlignment="Center"/>
+        <Button x:Name="registrationButton" Grid.Row="7" Background="Blue" Grid.ColumnSpan="2" Content="Зарегистрироваться" Margin="0,5" Template="{StaticResource ButtonTemplate}" Click="Button_Click"/>
+    </Grid>
+</Window>

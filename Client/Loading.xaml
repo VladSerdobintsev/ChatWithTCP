@@ -1,0 +1,10 @@
+﻿<Window x:Class="Client.Loading"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Loading" Height="50" Width="200" Topmost="True" WindowStartupLocation="CenterOwner" ResizeMode="NoResize" WindowStyle="None" Opacity="2" ShowInTaskbar="False">
+    <Grid>
+        <TextBlock x:Name="loadingTextBlock" Text="Загрузка" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Arial" FontSize="35"/>
+        <!--<Image x:Name="loadingImage" Source="loading.gif" Opacity="100"/>
+        <ProgressBar IsIndeterminate="True" />-->
+    </Grid>
+</Window>
