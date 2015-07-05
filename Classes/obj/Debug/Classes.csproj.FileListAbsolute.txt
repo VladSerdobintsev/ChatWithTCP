@@ -1,0 +1,5 @@
+C:\Users\User\Desktop\ChatWithTCP\Classes\bin\Debug\Classes.dll
+C:\Users\User\Desktop\ChatWithTCP\Classes\bin\Debug\Classes.pdb
+C:\Users\User\Desktop\ChatWithTCP\Classes\obj\Debug\Classes.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\ChatWithTCP\Classes\obj\Debug\Classes.dll
+C:\Users\User\Desktop\ChatWithTCP\Classes\obj\Debug\Classes.pdb

@@ -1,0 +1,8 @@
+C:\Users\User\Desktop\ChatWithTCP\Server\bin\Debug\Server.exe.config
+C:\Users\User\Desktop\ChatWithTCP\Server\bin\Debug\Server.exe
+C:\Users\User\Desktop\ChatWithTCP\Server\bin\Debug\Server.pdb
+C:\Users\User\Desktop\ChatWithTCP\Server\bin\Debug\Classes.dll
+C:\Users\User\Desktop\ChatWithTCP\Server\bin\Debug\Classes.pdb
+C:\Users\User\Desktop\ChatWithTCP\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\ChatWithTCP\Server\obj\Debug\Server.exe
+C:\Users\User\Desktop\ChatWithTCP\Server\obj\Debug\Server.pdb

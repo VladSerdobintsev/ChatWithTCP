@@ -207,6 +207,7 @@ namespace Client
         }
         private void usersOnlineListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            if (UsersListBox.SelectedIndex == -1) return;
             Functions.SerializeAndSend(
                 new GetMessages(AccountInformation.Id, (UsersListBox.SelectedItem as Correspondence).Interlocutor.Id),
                 _connectionSocket);
